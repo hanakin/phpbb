@@ -8,7 +8,6 @@
 	},
 	"xo": {
 		"ignores": [
-			"./**/adm/style/admin.js",
 			"./**/adm/style/ajax.js",
 			"./**/adm/style/permissions.js",
 			"./**/adm/style/tooltip.js",
@@ -19,7 +18,9 @@
 			"./**/styles/prosilver/template/ajax.js",
 			"./**/styles/prosilver/template/forum_fn.js",
 			"./**/phpbb/**/*.js",
-			"./**/tests/**/*.js"
+			"./**/vendor-ext/**/*.js",
+			"./**/tests/**/*.js",
+			"./node_modules/**/*.js"
 		],
 		"rules": {
 			"quotes": [
@@ -69,7 +70,6 @@
 		"ios >= 12.4"
 	],
 	"scripts": {
-		"xo": "xo"
 	},
 	"repository": {
 		"type": "git",
@@ -105,5 +105,6 @@
 		"stylelint-order": "4.0.0",
 		"xo": "0.29.1"
 	},
-	"dependencies": {}
+	"dependencies": {
+	}
 }
